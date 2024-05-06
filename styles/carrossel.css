@@ -1,0 +1,333 @@
+.carrossel__titulo{
+    color: var(--laranja);
+    background-color: var(--cor-branca);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card{
+    background: var(--cor-branca);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+}
+.descricao img{
+    margin-bottom: 0.5rem;
+}
+.descricao__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo__livro{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.8rem 0;
+}
+
+.descricao__texto{
+    font-size:14px;
+}
+
+.botoes__itens{
+    margin: 0 0.5em;
+}
+
+.botoes__ancora{
+    background-color: var(--laranja);
+    padding: 1em 2.25em;
+    color: var(--cor-branca);
+    font-weight: 700;
+    text-decoration: none;
+}   
+
+.descricao{
+    margin: 0 1em 0 0.5em;
+    line-height: 1.2em;
+}
+
+.container__visitas{
+    background: var(--azul-degrade);
+    padding: 1.5em 0.5em;
+}
+
+.container__titulo{
+    color: var(--cor-branca);
+    text-align: center;
+    margin-bottom: 1.5em ;
+    font-weight: 300;
+    text-transform:uppercase;
+}
+
+.container__topicos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.topicos__itens{
+    background-color: var(--laranja);
+    padding: 1em;
+}
+
+.topicos__itens a{
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+.container__capitura{
+    background-color: var(--cor-branca);
+}
+
+.conteudo__capitura{
+    margin: 1em;
+}
+
+.capitura__titulo{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.capitura__texto{
+    font-weight: 300;
+    color: var(--azul);
+    margin: 1em 0;
+}
+
+.capitura__email{
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    outline: none;
+    margin-bottom: 1em;
+}
+
+.capitura__email::placeholder{
+    color: var(--azul);
+    font-family: var(--poppins);
+    background: url(../assets/email.svg) no-repeat;
+    padding-left: 2em;
+    
+}
+
+.rodape__texto{
+    border-top: 0.5px solid var(--azul);
+    padding: 1em;
+    font-size: 12px;
+    text-align: center;
+    color: var(--azul);
+}
+
+.carrossel__titulo__1024{
+    display: none;
+}
+
+.lista__roddape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .mobile__titulo{
+        display: none;
+    }
+
+    .carrossel__titulo__1024{
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--laranja);
+        padding: 2.5em 0 1em;
+        background-color: white;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+    }
+
+    .swiper-slide img{
+        width: 60%;
+        margin-left: 5em;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 30%;
+    }
+
+    .card{
+        width: 60%;
+        margin: 2em auto;
+    }
+   
+    .descricao{
+        margin-right: 4em;
+    }
+    
+    .container__titulo{
+        font-size: 24px
+    }
+
+    .container__topicos{
+        margin: 2em;
+        gap: 30px;
+    }
+
+    .topicos__itens{
+        padding:2em;
+    }
+
+    .topicos__itens a{
+        font-size: 24px;
+    }
+
+    .contianer__capitura{
+        display: flex;
+        justify-content: center;
+    }
+
+    .capitura__email{
+        width: 25%;
+        margin: auto;
+    }
+
+    .conteudo__capitura{
+        padding: 2em 0 5em 5em;
+        
+    }
+
+    .capitura__titulo{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .capitura__texto{
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        margin: 2em 0;
+        border-top: 0.5px solid black;
+        padding: 2em;
+    }
+
+    .lista__roddape{
+        display: block;
+    }
+
+    .rodape__texto{
+        border-top: none;
+    }
+
+    .lista__rodape__item{
+        margin: 1em 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .lista__rodape__link{
+        text-decoration: none;
+        margin-left: 0.5em;
+        color: var(--cor__footer);
+    }
+    .lista__rodape__titulo{
+        text-transform: uppercase;
+        margin-bottom: 2em;
+        color: rgba(133, 133, 133, 1);
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (min-width: 1728px){
+    
+    .display__container{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .card{
+        width: 30vw;
+    }
+
+    .descricao__titulo{
+        font-size:32px;
+        line-height: 1;
+    }
+    .swiper{
+        width: 50vw;
+        margin: 8em 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+        
+    }
+
+    .mais__vendidos{
+        padding: 3em 0 1em;
+        font-size: 24px;
+    }
+
+    .container__visitas{
+        padding: 5em 0;
+    }
+
+    .container__topicos{
+        padding: 1em 30em 0;
+    }
+
+    .contianer__capitura{
+    padding: 3em 23vw;
+    }
+
+    .teste{
+        display: flex;
+        justify-content: center;
+    }
+
+}

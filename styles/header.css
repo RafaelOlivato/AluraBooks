@@ -1,0 +1,147 @@
+.cabeçalho__menu-hamburguer{
+    width: 27px;
+    height: 39px;
+    background-image: url(../assets/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabeçalho{
+    background-color: var(--cor-branca);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__img{
+    padding: 1rem;
+}
+
+/* MENU HAMBURGUÊR */
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo , .lista-menu__item{
+    padding: 1em;
+    background-color:var(--cor-branca);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    color: var(--azul-degrade);
+    text-decoration: none;
+}
+
+
+.container__botao{
+    display: none;
+}
+
+.container__titulo__header{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+.container__texto{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .container__titulo__header, .container__titulo--negrito{
+        font-family: var(--font__secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo__header{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcao__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .container__img-transparente{
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .cabeçalho{
+        padding: 0 3em;
+    }
+
+    .container{
+        margin-right: 1.5em;
+    }
+
+    .container__pai{
+        display: block;
+        margin-left: 2em;
+    }
+
+    .container__texto{
+        display: block;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+}
